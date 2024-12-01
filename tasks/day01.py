@@ -1,11 +1,20 @@
-def main():
+from utils.Results import TestingResults
+def day_one():
     test_filepath = "resources/test-inputs/test01.txt"
     input_filepath = "resources/inputs/input01.txt"
 
-    print("part one (test):", part_one(test_filepath))  # 11
-    print("part one (real input):", part_one(input_filepath))  # 3508942
-    print("part two (test):", part_two(test_filepath))  # 31
-    print("part two (real input):", part_two(input_filepath))  # 26593248
+    test_pt1 = part_one(test_filepath)
+    input_pt1 = part_one(input_filepath)
+    test_pt2 = part_two(test_filepath)
+    input_pt2 = part_two(input_filepath)
+
+    print("part one (test):", test_pt1)  # 11
+    print("part one (real input):", input_pt1)  # 3508942
+    print("part two (test):", test_pt2)  # 31
+    print("part two (real input):", input_pt2)  # 26593248
+
+    return TestingResults(1, (input_pt1 == 3508942), (input_pt2 == 26593248))
+
 
 
 def part_one(filepath):
