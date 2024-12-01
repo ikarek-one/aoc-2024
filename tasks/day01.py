@@ -2,33 +2,30 @@ def main():
     test_filepath = "resources/test-inputs/test01.txt"
     input_filepath = "resources/inputs/input01.txt"
 
-    print("part one (test):", partOne(test_filepath))  # 11
-    print("part one (real input):", partOne(input_filepath))  # 3508942
-    print("part two (test):", partTwo(test_filepath))  # 31
-    print("part two (real input):", partTwo(input_filepath))  # 26593248
+    print("part one (test):", part_one(test_filepath))  # 11
+    print("part one (real input):", part_one(input_filepath))  # 3508942
+    print("part two (test):", part_two(test_filepath))  # 31
+    print("part two (real input):", part_two(input_filepath))  # 26593248
 
 
-def partOne(filepath):
+def part_one(filepath):
     (list1, list2) = parse_input(filepath)
     list1.sort()
     list2.sort()
-    assert len(list1) == len(list2)
     return sum(map(lambda x1, x2: abs(x1 - x2), list1, list2))
 
 
-def partTwo(filepath):
+def part_two(filepath):
     (list1, list2) = parse_input(filepath)
-    assert len(list1) == len(list2)
 
     freq = {}
-    for i in range(len(list1)):
-        num = list2[i]
+    for num in list2:
         freq[num] = freq.get(num, 0) + 1
 
-    result = 0
+    result_score = 0
     for id in list1:
-        result += id * freq.get(id, 0)
-    return result
+        result_score += id * freq.get(id, 0)
+    return result_score
 
 
 def parse_input(filepath):
