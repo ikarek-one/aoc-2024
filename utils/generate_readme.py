@@ -1,6 +1,7 @@
 import day01
+import day02
 
-day_results = [day01.day_one()]
+day_results = [day01.day_one(), day02.day_two()]
 
 template = "Advent of Code 2024 - finished tasks so far:\n\nDay No | part one | part two\n"
 legend = "Legend: ★ - not finished, ✰ - finished"

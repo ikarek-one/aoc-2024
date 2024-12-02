@@ -1,6 +1,5 @@
+import day02
 from utils.generate_readme import generate_readme
-import day01
 
-day01.day_one()
-generate_readme()
-
+day02.day_two()
+# generate_readme()
