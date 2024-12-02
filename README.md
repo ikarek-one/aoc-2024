@@ -1,7 +1,7 @@
-Advent of Code 2024 - finished tasks so far:
-
-Day No | part one | part two 
-02     |     ✰   |     ✰ 
-01     |     ✰   |     ✰ 
-Legend: ★ - not finished, ✰ - finished 
-I have already received 4 stars!
+Advent of Code 2024 - finished tasks so far:<br>
+<br>
+Day No | part one | part two<br> 
+02     |     ✰   |     ✰ <br>
+01     |     ✰   |     ✰ <br>
+Legend: ★ - not finished, ✰ - finished<br> 
+I have already received 4 stars!<br>
