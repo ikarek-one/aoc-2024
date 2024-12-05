@@ -17,7 +17,7 @@ def day_two():
     print("part one (test):", test_pt1)  # 2
     print("part one (real input):", input_pt1)  # 510
     print("part two (test):", test_pt2)  # 4
-    print("part two (real input):", input_pt2)  #
+    print("part two (real input):", input_pt2)  # 553
 
     return TestingResults(2, input_pt1 == 510, input_pt2 == 553)
 
